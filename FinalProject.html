@@ -1,0 +1,110 @@
+<html>
+  <meta charset="utf-8">
+<head>
+  <link rel="stylesheet" type="text/css" href="FinalProject.css">
+  <title>
+    Final Project
+  </title>
+  <center>
+  <h2>
+    <p id="p1">This site stores your username and password data for a variety of sites, so that you never forget another password again.
+    When you create an account, you will be brought to a page where you can choose a site and enter your login data for that site.
+    Whenever you log back in, your data will still be there.</p>
+  </h2>
+</center>
+</head>
+<body>
+
+<center>
+  <div id="userState"></div>
+  <div id="d1">
+    Email: <br>
+    <input type="email" id="email" name="email"><br>
+  Password:<br>
+  <input type="password" id="pass" name="password"><br><br>
+  <button id="b1">Create account</button>
+  <button id="b2">Log in</button>
+  <br><br>
+    </div>
+  <button id="b3">Log Out</button><br>
+
+
+
+<div id=gram>
+  <center>
+<h2>
+  <p id=in> Instagram</p>
+</h2>
+<p id="p2"> On this page, you can enter your Instagram username and password in the boxes.</p><br>
+<input type="text" id="instaName" name="Username"><br><br>
+<input type='text' id='instaPass' name="Password"><br>
+</center>
+</div>
+
+<div id=fb>
+  <center>
+    <h2>
+    <p id=face> Facebook</p>
+  </h2>
+  <p id="p3"> On this page, you can enter your Facebook username and password in the boxes</p><br>
+  <input type="text" id="fbName" name="Username"><br><br>
+  <input type='text' id='fbPass' name="Password"><br>
+</center>
+</div>
+
+  <div id=Tweet>
+    <center>
+      <h2>
+      <p id=tw> Twitter</p>
+    </h2>
+    <p id="p4"> On this page, you can enter your Twitter username and password in the boxes</p><br>
+    <input type="text" id="twName" name="Username"><br><br>
+    <input type='text' id='twPass' name="Password"><br>
+</center>
+</div>
+
+<div id=cvu>
+  <center>
+    <h2>
+    <p id=c> CVU Login</p>
+  </h2>
+  <p id="p5"> On this page, you can enter your CVU login info in the boxes</p><br>
+  <input type="text" id="cvuName" name="Username"><br><br>
+  <input type='text' id='cvuPass' name="Password"><br>
+</center>
+</div>
+
+<button id='b4'>Confirm Instagram Data</button>
+<button id='b5'>Confirm Twitter Data</button>
+<button id='b6'>Confirm Facebook Data</button>
+<button id='b7'>Confirm CVU Data</button>
+
+
+<div id="arrayButtons">
+<button id="b8">Instagram</button>
+<button id="b9">Twitter</button>
+<button id="b10">Facebook</button>
+<button id="b11">CVU</button>
+</div>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyCV8rHkboq6HaHXwPYwQMJ1SW0NOFxE7ps",
+  authDomain: "final-project-8d974.firebaseapp.com",
+  databaseURL: "https://final-project-8d974.firebaseio.com",
+  projectId: "final-project-8d974",
+  storageBucket: "final-project-8d974.appspot.com",
+  messagingSenderId: "806288660983"
+};
+firebase.initializeApp(config);
+</script>
+
+<script src="FinalProject.js"></script>
+
+</body>
+</html>
